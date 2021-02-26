@@ -1,12 +1,12 @@
 .SideDrawer {
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   background: white;
   width: 480px;
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1%;
   box-shadow: 10px 10px 10px 10px #d3defc;
   .sd-header {
     padding: 10px 20px;

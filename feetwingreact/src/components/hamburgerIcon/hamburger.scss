@@ -1,8 +1,8 @@
 .Hamburger {
   position: fixed;
-  z-index: 3; //odd one because of the overlay , it should be above the overlay
-  top: 40px;
-  right: 40px;
+  z-index: 4; //odd one because of the overlay , it should be above the overlay
+  top: 60px;
+  right: 65px;
   cursor: pointer;
 
   .Outerstroke {

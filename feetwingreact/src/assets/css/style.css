@@ -2598,7 +2598,7 @@ body.loaded .preloader {
   position: relative;
 }
 .questions-img img {
-  z-index: 10;
+  z-index: 1;
   position: relative;
   filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));
   -webkit-filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));

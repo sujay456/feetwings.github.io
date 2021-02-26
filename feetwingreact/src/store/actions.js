@@ -1,1 +1,3 @@
 export const  SET_SIDEDRAWER="SET_SIDEDRAWER";
+export const SET_OVERLAY="SET_OVERLAY";
+
