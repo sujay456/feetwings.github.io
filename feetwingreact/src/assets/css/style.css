@@ -1575,7 +1575,7 @@ body.loaded .preloader {
 }
 .hero .main-heading {
   font-size: 8rem;
-  font-weight: 600;
+  font-weight: 650;
   color: #000;
   letter-spacing: -0.4rem;
   width: 100%;
@@ -1818,7 +1818,7 @@ body.loaded .preloader {
   -webkit-filter: drop-shadow(0px 40px 15px rgba(245, 69, 144, 0.4));
   -moz-filter: drop-shadow(0px 40px 15px rgba(245, 69, 144, 0.4));
 }
-.feature__box .icon i {
+.feature__box .icon svg {
   font-size: 8rem;
   color: white;
 }

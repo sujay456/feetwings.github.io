@@ -9,7 +9,7 @@ const Home =(props)=>{
     const img=useRef(null);
     useEffect(()=>{
         
-        gsap.from(img.current,{y:50,opacity:0,duration:1})
+        // gsap.from(img.current,{y:50,opacity:0,duration:1})
         
     },[])   
     return (
@@ -39,7 +39,7 @@ const Home =(props)=>{
           </div>
           <div className="col-lg-6 order-1 order-lg-2">
             <div className="questions-img hero-img">
-              <img ref={img} src={appimg} alt="image"></img>
+              <img ref={img} src={appimg} alt="logo"></img>
             </div>
           </div>
         </div>
