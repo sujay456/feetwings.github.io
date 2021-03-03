@@ -1948,7 +1948,7 @@ body.loaded .preloader {
 .video__play > button:hover {
   background-position: right top;
 }
-.video__play > button i {
+.video__play > button svg {
   font-size: 6.5rem;
   color: white;
   -webkit-transition: all 0.25s ease;
@@ -1988,7 +1988,7 @@ body.loaded .preloader {
   transition: all 0.25s ease;
   border: 2px solid #c274ee;
 }
-.video__play .modal-close button i {
+.video__play .modal-close button svg {
   font-size: 2rem;
   color: white;
   -webkit-transition: all 0.25s ease;
@@ -2077,7 +2077,7 @@ body.loaded .preloader {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.growth__box .icon i {
+.growth__box .icon svg {
   font-size: 5rem;
   color: #3890f0;
   position: absolute;

@@ -15,6 +15,7 @@ import Growth from './components/growth/growth';
 import Step from './components/step/step';
 import Question from './components/questions/questions';
 import Footer from './components/footer/footer';
+import Video from './components/videoss/video.js';
 library.add(fab, faCheckSquare, faCoffee)
 function App() {
   return (
@@ -24,10 +25,12 @@ function App() {
       <Overlay /> 
       <Home />
       <Features/>
+      <Video />
       <Growth />
       <Step />
       <Question />
       <Footer />
+      
     </div>
   );
 }

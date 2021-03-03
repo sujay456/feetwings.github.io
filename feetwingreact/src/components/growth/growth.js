@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserAstronaut ,FaLightbulb,FaSpa,FaRocket,FaBriefcaseMedical} from "react-icons/fa";
 
 const Growth=(props)=>{
 
@@ -11,7 +12,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-user-astronaut"></i>
+                <FaUserAstronaut />
               </div>
               <div class="content">
                 <h3>Start Easily</h3>
@@ -22,7 +23,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-lightbulb-on"></i>
+                <FaLightbulb />
               </div>
               <div class="content">
                 <h3>Improve Growth</h3>
@@ -33,7 +34,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-solar-system"></i>
+                <FaSpa />
               </div>
               <div class="content">
                 <h3>Create Algorithms</h3>
@@ -44,7 +45,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-backpack"></i>
+                <FaBriefcaseMedical />
               </div>
               <div class="content">
                 <h3>Expand Portfolio</h3>
@@ -55,7 +56,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-rocket-launch"></i>
+                <FaRocket />
               </div>
               <div class="content">
                 <h3>Share Statistics</h3>
@@ -66,7 +67,7 @@ const Growth=(props)=>{
           <div class="col-lg-6">
             <div class="growth__box">
               <div class="icon">
-                <i class="fad fa-user-astronaut"></i>
+                <FaUserAstronaut/>
               </div>
               <div class="content">
                 <h3>Measure Results</h3>
