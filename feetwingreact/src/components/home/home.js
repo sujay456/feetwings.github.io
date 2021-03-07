@@ -3,25 +3,41 @@ import gsap from 'gsap';
 import '../../assets/css/style.css';
 import appimg from '../../assets/images/phone-01.png';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home =(props)=>{
     const img=useRef(null);
     useEffect(()=>{
-        
-        // gsap.from(img.current,{y:50,opacity:0,duration:1})
-        
-    },[])   
+      // gsap.set('.main-heading span',{yPercent:55})
+      gsap.set('.paragraph .whole',{yPercent:95})
+      gsap.from('.main-heading span',{yPercent:75,ease:"SlowMo.easeOut",stagger:0.1,duration:0.5,delay:0.01});      
+      gsap.to('.paragraph .whole',{yPercent:0,delay:0.4})
+      
+      gsap.from(img.current,{yPercent:90,skewY:40,delay:1,ease:"SlowMo.easeOut",opacity:0});
+    },[])
+     
     return (
         <section class="hero">
     <div className="hero__wrapper">
       <div className="container">
         <div className="row align-items-lg-center">
           <div className="col-lg-6 order-2 order-lg-1">
-            <h1 className="main-heading color-black">Redefining Limits!</h1>
-            <p className="paragraph"><span>Feetwings<sup>TM</sup></span> is an app that helps you organize
+            <h2 className="main-heading color-black"> 
+              <span >REDEFINGING</span>
+            </h2>
+            <h2 className="main-heading color-black">
+              <span >LIMITS</span>
+            </h2>
+            {/* {mottoComp} */}
+            <p className="paragraph">
+              <span className="whole">
+              <span className="name">Feetwings<sup>TM</sup></span> is an app that helps you organize
               yourself on the daily basis using systematic
-              algorithms to achieve success.</p>
+              algorithms to achieve success.
+              </span>
+              </p>
             <div className="download-buttons">
               <a href="/" className="google-play">
                 <i className="fab fa-google-play"></i>

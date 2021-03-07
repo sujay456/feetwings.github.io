@@ -1564,7 +1564,7 @@ body.loaded .preloader {
 }
 .hero {
   width: 100vw;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .hero__wrapper {
   width: calc(100% - 10rem);
@@ -1579,14 +1579,26 @@ body.loaded .preloader {
   color: #000;
   letter-spacing: -0.4rem;
   width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+.hero .main-heading span {
+  display: inline-block;
+}
+.hero .block {
+  display: block;
 }
 .hero .paragraph {
   font-size: 2.4rem;
   line-height: 4rem;
   color: #474b4c;
   margin: 3.6rem 0 3.5rem 0;
+  overflow: hidden;
 }
 .hero .paragraph span {
+  display: inline-block;
+}
+.hero .paragraph .name {
   font-weight: 700;
 }
 .hero .download-buttons a {
