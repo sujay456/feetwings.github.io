@@ -5,26 +5,32 @@ import appimg from '../../assets/images/phone-01.png';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home =(props)=>{
     const img=useRef(null);
+    const container=useRef(null);
+
+ 
     useEffect(()=>{
-      // gsap.set('.main-heading span',{yPercent:55})
-      gsap.set('.paragraph .whole',{yPercent:95})
-      gsap.from('.main-heading span',{yPercent:75,ease:"SlowMo.easeOut",stagger:0.1,duration:0.5,delay:0.01});      
+      gsap.set('.main-heading span',{yPercent:55})
+      gsap.set('.paragraph .whole',{yPercent:95});
+      gsap.set('.main-heading span',{yPercent:75,opacity:0});
+      gsap.to('.main-heading span',{yPercent:0,ease:"SlowMo.easeOut",stagger:0.1,duration:0.6,delay:0.2,opacity:1});      
       gsap.to('.paragraph .whole',{yPercent:0,delay:0.4})
       
-      gsap.from(img.current,{yPercent:90,skewY:40,delay:1,ease:"SlowMo.easeOut",opacity:0});
+      
+    
     },[])
-     
+  
     return (
         <section class="hero">
     <div className="hero__wrapper">
       <div className="container">
         <div className="row align-items-lg-center">
           <div className="col-lg-6 order-2 order-lg-1">
-            <h2 className="main-heading color-black"> 
+            <h2 className="main-heading color-black" > 
               <span >REDEFINGING</span>
             </h2>
             <h2 className="main-heading color-black">
@@ -54,7 +60,7 @@ const Home =(props)=>{
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2">
-            <div className="questions-img hero-img">
+            <div ref={container}  className="questions-img hero-img">
               <img ref={img} src={appimg} alt="logo"></img>
             </div>
           </div>

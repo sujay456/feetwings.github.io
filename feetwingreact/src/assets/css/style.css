@@ -1584,6 +1584,7 @@ body.loaded .preloader {
 }
 .hero .main-heading span {
   display: inline-block;
+  opacity: 0;
 }
 .hero .block {
   display: block;
@@ -2608,6 +2609,11 @@ body.loaded .preloader {
 .questions-img {
   text-align: right;
   position: relative;
+  cursor: none;
+
+  /* perspective: 100; */
+  /* z-index: 2000; */
+  /* transform-style: preserve-3d; */
 }
 .questions-img img {
   z-index: 1;
@@ -2615,6 +2621,16 @@ body.loaded .preloader {
   filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));
   -webkit-filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));
   -moz-filter: drop-shadow(0px 20px 10px rgba(75, 80, 84, 0.2));
+  /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2); */
+  animation: circle1 12s linear infinite;
+}
+@keyframes circle1 {
+  from {
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
 }
 .questions-img::before {
   content: "";
@@ -3324,14 +3340,3 @@ body.loaded .preloader {
 /* sujay work */
 
 /* Mouse */
-.Mouse {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgb(0, 81, 255);
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  z-index: 5;
-}
