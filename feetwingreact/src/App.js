@@ -16,12 +16,14 @@ import Step from './components/step/step';
 import Question from './components/questions/questions';
 import Footer from './components/footer/footer';
 import Video from './components/videoss/video.js';
-import Mouse from './components/UI/mouse/mouse';
+
 library.add(fab, faCheckSquare, faCoffee)
 function App() {
+
+  
   return (
     <div className="App">
-      <Mouse />
+    
       <Header />
       
       <Overlay /> 

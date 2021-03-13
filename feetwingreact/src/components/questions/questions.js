@@ -1,8 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import bg from '../../assets/images/phone-01.png';
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Question =(props)=>{
+  useEffect(()=>{
+    gsap.set('.questions',{opacity:0,y:100});
 
+    gsap.to('.questions',
+    {
+      scrollTrigger:{
+        trigger:'.questions',
+        // markers:true,
+        start:'0% 70%',
+        toggleActions:'play none none none',
+      },
+      y:0,
+      opacity:1
+    })
+  },[])
     return (
         <section class="questions" id="faq">
     <div class="questions__wrapper">

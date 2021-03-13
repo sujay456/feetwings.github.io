@@ -1,8 +1,27 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { FaUserAstronaut ,FaLightbulb,FaSpa,FaRocket} from "react-icons/fa";
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 const Features=(props)=>{
 
+    useEffect(()=>{
+      gsap.set('.feature',{opacity:0,y:100});
+
+      gsap.to('.feature',
+      {
+        scrollTrigger:{
+          trigger:'.feature',
+          // markers:true,
+          start:'0% 70%',
+          toggleActions:'play none none none',
+        },
+        y:0,
+        opacity:1
+      })
+    },[])
     return (
         <section class="feature" id="intro">
     <div class="container">

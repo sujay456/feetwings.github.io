@@ -1,8 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { FaUserAstronaut ,FaLightbulb,FaSpa,FaRocket,FaBriefcaseMedical} from "react-icons/fa";
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Growth=(props)=>{
+  useEffect(()=>{
+    gsap.set('.growth',{opacity:0,y:100});
 
+    gsap.to('.growth',
+    {
+      scrollTrigger:{
+        trigger:'.growth',
+        // markers:true,
+        start:'0% 70%',
+        toggleActions:'play none none none',
+      },
+      y:0,
+      opacity:1
+    })
+  },[])
     return (
         <section class="growth" id="feature">
     <div class="growth__wrapper">

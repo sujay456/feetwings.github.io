@@ -188,22 +188,7 @@ $('.nav__dropdown-info').on('click', (e) => {
 });
 
 // Sujay Work
-const mouse=document.querySelector('.Mouse');
-document.addEventListener('mousemove',(event)=>{
-    gsap.to(mouse,{x:event.pageX,y:event.pageY,duration:1,ease:'Power2.easeOut'});
-});
 
-document.querySelector('a').addEventListener('mouseenter',()=>{
-    console.log('Hello');
-    gsap.to(mouse,{opacity:1});
-})
-document.querySelector('li a').addEventListener('mouseenter',()=>{
-    console.log('Hello');
-    gsap.to(mouse,{opacity:1});
-})
-document.querySelector('a').addEventListener('mouseleave',()=>{
-    gsap.to(mouse,{opacity:0,duration:0.5});
-})
 
 
 

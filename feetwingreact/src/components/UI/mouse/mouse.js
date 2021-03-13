@@ -11,7 +11,8 @@ const Mouse=(props)=>{
     useEffect(()=>{
         
         gsap.to(mouse.current,{color:'#8c0000'});
-    },[])
+    },[]);
+    
     return (
         
             <div ref={mouse} className="Mouse">
